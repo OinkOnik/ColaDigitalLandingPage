@@ -3,6 +3,7 @@ import { ArrowRight, Check, Star } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '../ui/button';
+import Image from 'next/image';
 
 function HeroSection() {
     return (
@@ -11,37 +12,41 @@ function HeroSection() {
                 <div className="col-span-1 px-2 lg:px-0">
                     <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
                         <h1 className="relative w-fit tracking-tighter text-balance font-bold !leading-tight text-gray-900 text-5xl md:text-6xl">
-                            Your tagline here for your cool product
+                        Soluciones digitales al instante 🚀
                         </h1>
 
                         <p className="mt-8 text-balance text-lg max-w-prose text-center font-semibold lg:pr-10 md:text-wrap lg:text-left">
-                            This is a great place to describe your product and what it does. This is a great place to describe your product and what it does.
+                        Más que software, ofrecemos herramientas que simplifican tu día a día. Soluciones personalizadas, fáciles de usar y listas para impulsar tu negocio.
                         </p>
 
                         <ul className="hidden mt-8 text-left font-medium md:flex flex-col items-center sm:items-start">
                             <div className="space-y-2">
                                 <li className="flex gap-1.5 items-center text-left">
                                     <Check className="h-5 w-5 shrink-0 text-green-600" />
-                                    Good reason one
+                                    Menús Digitales para Restaurantes
                                 </li>
                                 <li className="flex gap-1.5 items-center text-left">
                                     <Check className="h-5 w-5 shrink-0 text-green-600" />
-                                    Good reason two
+                                    Gestión Simple para PYMES
                                 </li>
                                 <li className="flex gap-1.5 items-center text-left">
                                     <Check className="h-5 w-5 shrink-0 text-green-600" />
-                                    Good reason three
+                                    Soluciones por Industria
                                 </li>
                                 <li className="flex gap-1.5 items-center text-left">
                                     <Check className="h-5 w-5 shrink-0 text-green-600" />
-                                    Good reason four
+                                    Automatiza sin Programar
+                                </li>
+                                <li className="flex gap-1.5 items-center text-left">
+                                    <Check className="h-5 w-5 shrink-0 text-green-600" />
+                                    Herramientas Express
                                 </li>
                             </div>
                         </ul>
 
                         {/* CTA button */}
                         <Link href='#' className={cn(buttonVariants({ size: 'lg' }), "flex items-center justify-center mt-8 group")}>
-                            <span>Start Now</span>
+                            <span>Más información</span>
                             <ArrowRight className='ml-1.5 transform h-4 w-4 transition-transform duration-300 group-hover:translate-x-1' />
                         </Link>
 
@@ -68,8 +73,8 @@ function HeroSection() {
                 </div>
 
                 <div className="col-span-full mt-14 md:mt-0 lg:col-span-1">
-                    <div className="w-full h-60 lg:h-full rounded-3xl bg-gray-200/80 flex items-center justify-center">
-                        <h1 className='text-center text-lg font-bold'>Your graphic</h1>
+                    <div className="w-full h-60 lg:h-full rounded-3xl flex items-center justify-center relative">
+                    <Image src='/mascota.png' alt="Descripción de la imagen" layout="responsive" width={600} height={400} />
                     </div>
                 </div>
             </MaxWidthWrapper>

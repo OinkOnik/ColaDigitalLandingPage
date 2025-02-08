@@ -66,7 +66,7 @@ function HeroSection() {
                                     ))}
                                 </div>
 
-                                <p><span className="font-semibold">5+</span> Usuarios felices</p>
+                                <p><span className="font-semibold">+5</span> Usuarios felices</p>
                             </div>
                         </div>
                     </div>

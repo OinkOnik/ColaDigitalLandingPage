@@ -74,7 +74,7 @@ function HeroSection() {
 
                 <div className="col-span-full mt-14 md:mt-0 lg:col-span-1">
                     <div className="w-full h-60 lg:h-full rounded-3xl flex items-center justify-center relative">
-                    <Image src='/mascota.png' alt="Descripción de la imagen" layout="responsive" width={600} height={400} />
+                    <Image src='/mascota1.png' alt="Descripción de la imagen" layout="responsive" width={600} height={400} />
                     </div>
                 </div>
             </MaxWidthWrapper>
